@@ -1,0 +1,364 @@
+/* Global Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+	--gray1: #f5f5f7;
+	--gray2: #6e6e73;
+	--gray3: #1d1d1f;
+
+
+
+	--primary-light: #8abdff;
+	--primary: #6d5dfc;
+	--primary-dark: #5b0eeb;
+  
+	--white: #FFFFFF;
+	--greyLight-0: #e3e6eb;
+	--greyLight-4: #d9dfea;
+  
+	--greyLight-1: #e3e6eb82;
+	--greyLight-2: #c8d0e7;
+	--greyLight-3: #bec8e4;
+	--greyDark: #383838;
+	--duration: .5s;   
+}
+
+
+.main-section{
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	/* padding: 60px 0; */
+	zoom: 80%;
+	overflow: hidden;
+	background:#FFF4ED;
+}
+
+
+.top-card{
+    /* height: 81vh; */
+    padding: 0.6vh;
+}
+
+.top-inner-card{
+    height: 40.5vh;
+    /* padding: 0.6vh; */
+	overflow:hidden; border-radius: 2vh; padding: 0.7vh;
+}
+
+.bottom-card{
+height: 43vh;
+padding: 0.6vh;
+}
+
+.content-card{
+	background: var(--greyLight-1);
+    height: 100%;
+	width: 100%;
+    border-radius: 2vh;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* scada-card1 start */
+#scada-card1{
+    height: 100%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    padding: 0;
+  
+}
+
+
+.deparment-cards-section{
+	padding: 0.7vh !important;
+	cursor: pointer;
+}
+
+.dparment-logo {
+    height: 7vh;
+    width: 7vh;
+    border-radius: 100%;
+    background: var(--greyLight-1);
+    padding: 0.5vh;
+    position: relative;
+	/* background: #e0e0e0; */
+	box-shadow: inset 5px 5px 10px #d5d5d5,
+				inset -5px -5px 10px #ebebeb;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.department-info {
+    height: 7.9vh;
+    width: 100%;
+    /* background: var(--greyLight-1); */
+    border-radius: 1vh;
+	backdrop-filter: blur(4px);
+	/* box-shadow: 0 5px 50px rgba(0,0,0,0.5); */
+    background: linear-gradient(145deg, #d9dfea, #bec8e4);
+    box-shadow: 5px 5px 10px #d5d5d5, -5px -5px 10px #ebebeb;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.scada-name{
+	color: var(--gray2);
+	font-size: 1.8vh;
+	font-weight: bold;
+	position: absolute;
+	bottom: 4vh;
+}
+
+.d-name{
+	color: var(--greyDark);
+	font-size: 2vh;
+	color: black;
+	/* font-weight: 700; */
+	position: absolute;
+	bottom: 1vh;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.department-info:hover {
+    box-shadow: none !important;
+	color: var(--primary);
+}
+
+
+.department-info:hover .dparment-logo {
+	/* background: #e0e0e0; */
+	box-shadow: .3rem .3rem .6rem var(--greyLight-2),
+	-.2rem -.2rem .5rem var(--white);
+}
+
+
+/* scada-card1 start */
+#scada-card2{
+    height: 100%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    padding: 0;
+  
+}
+
+.roller-paver-section{
+ height: 19vh;
+ overflow: hidden;
+}
+
+.info-title{
+	color: var(--gray2);
+	font-size: 1.8vh;
+	font-weight: bold;
+	
+}
+.info-text{
+	color: var(--greyDark);
+	font-size:1.7vh;
+	line-height: 1.5 !important;
+	color: black;
+
+}
+
+.carousel-titel{
+	font-size: 1.8vh;
+	font-weight: bold;
+
+	letter-spacing: 0.2vh;
+}
+
+/* scada-card1 start */
+#scada-card5{
+    height: 100%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    padding: 0;
+  
+}
+.vipl-link-btn{
+	background-color: gray; width: 20vh; text-align: center; border-radius: 2vh;
+}
+
+
+
+
+
+.tab-img-card{
+	height: 20vh;
+	padding: 0.5vh;
+}
+.central-img{
+		border-radius: 2vh;
+		height: 100%;
+		width: 100%;
+}
+.inner-content-card1{
+	background: #F1F8E8;
+    height: 100%;
+	width: 100%;
+    border-radius: 2vh;
+	box-shadow: .3rem .3rem .6rem var(--greyLight-2),
+		-.2rem -.2rem .5rem var(--white);
+     cursor: pointer;
+	 position: relative;
+	 transition:  all 0.3s ease; 
+}
+.inner-content-card1:hover{
+height: 95%;
+width: 95%;
+}
+.inner-content-card1 h5 {
+	margin: 0;
+	font-size: 2vhpx;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	color: var(--gray2) !important;
+}
+.inner-content-card1 h5::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #3498db;
+	transition: width 0.3s ease-in-out;
+	position: absolute;
+	left: 0;
+
+	bottom: -5px;
+
+}
+
+.scada-card ,.vmtrack-card ,.elab-card ,.erp-s-card ,.erp-e-card,.xyz-e-card ,.estimate-card ,.e-billing-card {
+    background-size: cover;  /* Ensure the background image covers the element */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    width: 100%;  /* Adjust width as needed */
+    height: 100%;  /* Adjust height as needed */
+}
+
+.inner-content-card1:hover h5::after {
+	width: 100%;
+	
+}
+.inner-content-card1:hover h5 {
+	color: #3498db !important; /* Change text color on hover */
+}
+.scada-card{
+	background-image: url(../Images/SCADA3.png);
+	background-size: cover;  
+}
+.vmtrack-card{
+	background-image: url(../Images/VM-Track3.png);
+	background-size: cover;  
+}
+.elab-card{
+	background-image: url(../Images/e-lab3.png);
+	background-size: cover;  
+}
+.estimate-card{
+	background-image: url(../Images/estimate.png);
+	
+}
+.erp-e-card{
+	background-image: url(../Images/ERP-e.png);
+	  
+}
+.e-billing-card{
+	background-image: url(../Images/e-billing.png);
+	
+}
+.pro-name{
+	font-size: 1.5vh;
+	font-weight:900;
+}
+       /* Ensure the parent div has specific dimensions */
+#scada-card4 {
+	width: 100%; /* Adjust this as needed */
+	height: 100%; /* Adjust this as needed */
+	overflow: hidden; /* Hide overflow to remove blank space */
+	position: relative; /* Make sure it's positioned relative to contain the video */
+}
+	
+.video-container {
+	width: 100%;
+	height: 100%;
+	position: absolute; /* Ensure the video covers the entire div */		
+	}
+	
+.bg-video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
+	position: absolute; /* Ensure it stays in place */	
+	border-radius: 2vh;
+}
+
+
+
+
+
+.carousel-text{
+	font-size: 2vh;
+	/* font-weight: 600; */
+	color: var(--greyLight-0);
+}	
+
+.next-previous-btn{
+	background:var(--greyLight-2) !important;
+	border-radius: 100% !important;
+	font-weight: 800 !important;
+}
+
+/* .carousel-text-section{
+	background: var(--greyLight-3)!important;
+} */
+
+  /* CSS styles for layout and appearance */
+  .master-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .master {
+    width: 100%;
+    height: 100%;
+   
+  }
+  .controller {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .controller div {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  ::-webkit-scrollbar {
+	width: 0.7vh;
+	height: 0.7vh;
+  }
+  ::-webkit-scrollbar-track {
+	background: var(--greyLight-0);
+	border-radius: 0.1rem;
+  }
+  ::-webkit-scrollbar-thumb {
+	background-color: var(--greyLight-3);
+	border-radius: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+	height: 5px;
+  }
+
+
+  ul.list {
+	list-style-type: circle;
+  }
